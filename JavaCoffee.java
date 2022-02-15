@@ -2,7 +2,7 @@ public class JavaCoffee {
     public static void main(String[] args) {
         // variables de la app
         // lineas de texto de la app
-        String saludoGeneral = "Bienvenido al caje java, ";
+        String saludoGeneral = "Bienvenido al cafe java, ";
         String mensajePendiente = ", tu pedido esta listo en breve";
         String mensajeListo = ", tu pedido esta listo";
         String mensajeMostrarTotal = ", tu pedido es de $";
@@ -28,5 +28,26 @@ public class JavaCoffee {
         // SIMULACIÓN DE INTERACCIÓN DE APP(Agrega tu código para los desafíos a continuación)
         // Ejemplo:
         System.out.println(saludoGeneral+cliente1);
-    }
+        //1
+        System.out.println(cliente1+ mensajePendiente);
+        //2
+        if (estaListoOrden4) {
+            System.out.println(cliente4+mensajeListo);
+            System.out.println(mensajeMostrarTotal+cappuccino);
+        }
+        else {
+            System.out.println(cliente4+mensajePendiente);
+        }
+        //3
+        System.out.println(mensajeMostrarTotal + 2*latte);
+        if (estaListoOrden2) {
+            System.out.println(cliente2 + mensajeListo);
+        }
+        else {
+            System.out.println(cliente2 + mensajePendiente);
+        }
+        //4
+        System.out.println(mensajeMostrarTotal + (latte - filterCoffee));
+    }   
+
 }
